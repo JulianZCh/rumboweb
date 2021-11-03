@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumbo - website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<!-- <body> es el contenedor principal -->
+<body>
+    <header>
+        <!-- <header> es el contenedor de la cabecera -->
+        <nav> 
+            <!-- la etiqueta <a> es para un hipervinculo y la etiqueta <nav> es para hacer una barra de navegacion -->
+            <a href="index.HTML"> <img src="img/logo.png" alt="Imagen Logo"> </a>
+            <ul>
+                <!-- la etiqueta ul es un tipo de lista y li es para definir el elemento de la lista -->
+                <li><a href="#"> Inicio </a> </li>
+                <li><a href="#planes"> Planes </a> </li>
+                <li><a href="#destinos"> Destinos </a> </li>
+                <li><a href="#contacto"> Contacto </a> </li>
+            </ul>
+        </nav>  
+        <!-- la etiqueta <div> es otro tipo de contenedor -->
+        <div id="hero"> 
+            <img src="img/brujula.png" alt="Imagen Brujula">
+            <h1> RUMBO </h1>
+            <h2> El sitio web de turismo ideal para ti </h2>
+            <a href="#"> Empezar </a>
+        </div>  
+    </header>
+    <main>
+        <section id="planes">
+            <div class="container">
+                <H2> PLANES </H2>
+                <p> En <b>RUMBO</b> tenemos los siguientes planes para ti <br> Selecciona el plan que mas se ajuste a la experiencia que quieras vivir </p>
+
+                <div class="fila">
+                    <div class="card">
+                        <img src="img/senderismo.png" alt="imagen de senderismo">
+                        <h3> SENDERISMO </h3>
+                        <p> 5 a 8 personas <br>
+                            6KM de ruta <br> 
+                            150.000 pesos <br> 
+                            precio por persona 
+                        </p>                       
+                    </div>
+                    <div class="card">
+                        <img src="img/canotaje.png" alt="imagen de canotaje">
+                        <h3> CANOTAJE </h3>
+                        <p> 5 a 8 personas <br>
+                            6KMde ruta <br> 
+                            150.000 pesos <br> 
+                            precio por persona 
+                        </p>                       
+                    </div>
+                    <div class="card">
+                        <img src="img/cartagena.png" alt="imagen de camping">
+                        <h3> camping </h3>
+                        <p> 5 a 8 personas <br>
+                            6KM de ruta <br> 
+                            150.000 pesos <br> 
+                            precio por persona 
+                        </p>                       
+                    </div>
+                </div>
+            
+        </section>
+
+        <section id="destinos">
+            
+            <div class="container"> 
+                <h3>DESTINOS</h3>     
+                <div class="fila">
+                    <div class="card"">
+                        <img src="img/cartagena.png" alt="imagen de cartagena">
+                        <h4>CARTAGENA</h4>
+                    </div>
+                    <div class="card"">
+                        <img src="img/barranquilla.png" alt="imagen de barranquilla">
+                        <h4>BARRANQUILLA</h4>
+                    </div>
+                </div>
+                <div class="fila1">
+                    <div class="card"">
+                        <img src="img/llanos.png" alt="imagen de lo llanos orientales">
+                        <h4>LLANOS ORIENTALES</h4>
+                    </div>
+
+                    <div class="card"">
+                        <img src="img/laguajira.png" alt="imagen de la guajira">
+                        <h4>LA GUAJIRA</h4>
+                    </div> 
+                </div>
+                    
+            </div>
+            
+            
+        </section>
+        <section id="contacto">
+            <div class="container">
+                <h2> CONTACTO </h2>
+                <p>comparte con nosotros tus datos de contacto y te enviaremos <br> toda la informacion de los medios de pago.</p>
+                    <form action="#">
+                        <div class="fila">
+                            <!-- input para crear un campo que reciba informacion dentro de la pagina -->
+                            <input type="text"placeholder = "Nombre">
+                            <input type="number"placeholder = "Telefono">
+                        </div>
+                        <div class="fila">
+                            <input type="email"placeholder = "Email">
+                            <input type="text"placeholder = "Ciudad">
+                        </div>
+                        <button>
+                            Enviar
+                        </button>
+                    </form>
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        <p>
+            Todos los derechos reservados <br> contacto@rumbo.com <br> +57 321244445 <br> Cr 90 #93-20
+        </p>
+    </footer>
+</body>
+</html>

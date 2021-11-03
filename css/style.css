@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+body{
+    /* codigo para eliminar la margen externa e interna que trae por defecto el <body> */
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+header{
+    width: 100%;    
+    /* para llamar una imagen de fondo la propiedad de abajo :v */
+    background:url(../img/bg-header.png);
+    /* el "../" significa salir de la carpeta para buscar archivos */
+    background-size: cover;
+    /* Cover: ajusta la imagen al alto y ancho del contenedor (en este caso header) */
+    height: 100vh;
+    padding-top: 40px;
+}
+header nav{
+    max-width: 1200px;
+    width: 100%;
+    margin:0% auto;
+    /* display flex se usa para que las cosas se organicen de forma horizontal */
+    display:flex;
+    /* justify content para organizar el contenido en el eje x */
+    justify-content:space-between;
+    /* align items para organizar el contenido en el eje y */
+    align-items: center ; 
+}
+
+header nav ul {
+    display:flex;
+}
+
+header nav ul li{
+    list-style: none;
+     /*cuando ahi mas de un valor estos se organizan en orden de las manecillas del reloj */
+    margin: 0px 20px; 
+    /* cuando esta escrito solo margin significa el margen superior */
+    
+}
+
+header nav ul li a{
+    font-size: 15px;
+    /* tamaño y color de la fuente */
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    /* a parte de el borde solido tambien esta el dotted y da */
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+    padding: 12px 30px; 
+}
+
+header nav ul li a:hover {
+    /* hover para definir un tipo de estilo cuando el mouse pase por encima del objeto */
+    border-top: solid rgb(255, 255, 255);
+    border-bottom: solid rgb(255, 255, 255); 
+}
+
+header #hero {
+    width: 1200px;
+    max-width: 100%;
+    margin:0 auto;
+    /* margin 0 auto para centrar el contenedor y display flex para centrar los contenidos */
+    text-align:center; 
+    margin-top: 140px;
+}
+
+header #hero h1 {
+    color: #e8f00c;
+    font-size: 60px; 
+    margin: 0%;
+}
+
+header #hero h2 {
+    font-size: 30px;
+    color: white;
+    margin: 0%;
+    margin-bottom: 40px;
+}
+
+header #hero a {
+    background-color: #e8f00c;
+    padding: 10px 10px; 
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 10%;
+    color: gray;
+    transition: 2s;
+}
+
+header #hero a:hover {
+    padding: 10px 20px;
+
+}
+/* SECCION PLANES */
+main #planes {
+    width: 100%;
+    padding-top: 100px ;
+    /* padding es la margen interna de la caja planes */
+    padding-bottom: 100px ;
+    /* text align para centrar el texto */
+    text-align: center;
+    background-color: white;
+}
+
+#planes .container {
+    width: 100%;
+    /* defino el ancho que va ocupar en la pantalla */
+    max-width: 1200px;
+    /* margin 0 auto para centrar el contenido que esta dentro de planes */
+    margin: 0 auto;
+}
+#planes h2{
+    font-size: 50px;
+}
+
+#planes h3{
+    font-size: 20px;
+}
+
+#planes .fila{
+    display: flex; 
+    justify-content: space-evenly;
+    padding-top: 40px;
+}
+
+#planes .fila .card{
+    background-color:white;
+    /* para poder colocar el texto en frente de la imagen */
+    position: relative;
+}
+
+#planes .fila .card h3 {
+    position: absolute;
+    top: 80px;
+    color: #e8f00c;
+    font-size: 22px;
+    left: 0%;
+    right: 0%;
+}
+/* SECCION DESTINOS */
+#destinos {
+    width: 100%;
+    background:url(../img/bg-destinos.png);
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    font-size: 30px;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+#destinos h3 {
+    color:#e8f00c ;
+    font-size: 40px;
+    text-align: center;
+}
+
+#destinos .fila{
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#destinos .fila1{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#contacto h2{
+    text-align: center;
+}
+
+#contacto {
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    background-color: #e8f00c;
+}
+
+#contacto .container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#contacto h2{
+    font-size: 40px;
+}
+
+#contacto .fila{
+    padding: 4px;
+}
+
+#contacto p{
+     font-size: 20px;
+}
+
+#contacto input{
+    padding: 4px 15px;
+    font-size: 20px;
+    margin: 10px;
+    border-radius: 6px;
+    border: none;
+}
+
+#contacto button{
+    background-color: rgb(165, 165, 0);
+    padding: 10px 30px;
+    font-size: 20px;
+    color: white;
+    border: none;
+    border-radius: 6px;
+
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    font-size: 20px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
